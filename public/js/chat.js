@@ -100,14 +100,3 @@ socket.emit('join',{ username, room }, (error) => {
         location.href = '/'
     }
 })
-
-//https://google.com/maps?q=0,0
-
-// socket.on('countUpdated', (count) => {
-//     console.log('count has updated', count)
-// })
-
-// document.querySelector('#increment').addEventListener('click', () => {
-//     console.log('Clicked')
-//     socket.emit('increment')
-// })

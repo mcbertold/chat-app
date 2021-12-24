@@ -62,13 +62,6 @@ io.on('connection', (socket) => {
         io.to(user.room).emit('locationMessage', generateLocationMessage(user.username, `https://google.com/maps?q=${location.latitude},${location.longitude}`))
         callback()
     })
-    // socket.emit('countUpdated', count)
-
-    // socket.on('increment', () => {
-    //     count++
-    //     // socket.emit('countUpdated', count)
-    //     io.emit('countUpdated', count)
-    // })
 })
 
 server.listen(port, () => {
